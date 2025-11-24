@@ -8,7 +8,7 @@ export default function ProductsList({ products }: { products: Product[] }) {
         {products.map((product) => (
           <div key={product.id}>
             <Image
-              src={product.imageURL}
+              src={"/" + product.imageURL}
               width={150}
               height={150}
               alt={product.name}
