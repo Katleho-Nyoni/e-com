@@ -2,7 +2,7 @@ import { products } from "@/app/product-data";
 
 export default function ProductDetailPage({ params }: { params: { id: string }})
 {
-  const product = products.find(p => p.id === params.id);
+  const product = products.find(p => String(p.id) === params.id);
 
   return (
     <>
