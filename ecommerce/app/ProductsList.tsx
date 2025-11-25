@@ -13,7 +13,7 @@ export default function ProductsList({ products }: { products: Product[] }) {
               src={"/" + product.imageURL}
               width={150}
               height={150}
-              alt={product.name}
+              alt="product"
               className="rounded size-150x150 object-cover"
             />
             <h2 className="font-semibold">{product.name}</h2>
