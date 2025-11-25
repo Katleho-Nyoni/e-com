@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Product } from "./product-data";
 
 export default function ProductsList({ products }: { products: Product[] }) {
@@ -17,6 +18,7 @@ export default function ProductsList({ products }: { products: Product[] }) {
             />
             <h2 className="font-semibold">{product.name}</h2>
             <p>R{product.price}</p>
+            <button className="flex flex-row justify-center py-1 px-3 bg-indigo-500 font-bold rounded cursor-pointer hover:bg-indigo-800">Add<AiOutlineShoppingCart className="ml-2 size-6" /></button>
           </Link>
         ))}
       </div>
